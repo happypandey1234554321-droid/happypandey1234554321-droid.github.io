@@ -10,8 +10,8 @@
 <style>
 /* ===== Global Styles ===== */
 body{
-  background-color: #e3f2fd; /* Professional soft blue background for entire page */
-  color:#111;
+  background-color: #0f172a; /* Dark professional background */
+  color:#fff;
   font-family: Arial, sans-serif;
   transition: background 0.5s;
 }
@@ -19,11 +19,12 @@ body{
 a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.3s;
 }
 
 /* ===== Navbar ===== */
 .navbar{
-  background:#2196f3; /* Professional blue navbar */
+  background:#020617;
 }
 
 .navbar .nav-link{
@@ -55,7 +56,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(15,23,42,0.7); /* Dark overlay */
   z-index: 0;
 }
 
@@ -74,30 +75,36 @@ a {
   margin: 5px;
   padding: 10px 20px;
   font-size: 16px;
+  transition: all 0.3s;
+}
+
+.hero-buttons a:hover {
+  transform: scale(1.1);
+  background-color: #2196f3;
+  color:#fff;
+  border-color:#2196f3;
 }
 
 /* ===== Sections ===== */
 .section{
   padding:80px 20px;
-  background-color: #e3f2fd; /* Professional background color applied to all sections */
+  background-color: #1e293b; /* Slightly lighter dark section background */
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 1100px;
 }
 
 /* ===== About Section ===== */
 .about-text {
-  background: #ffffff; /* Slightly lighter card to stand out */
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  color: #111;
+  color: #fff;
   font-size: 16px;
-  line-height: 1.6;
-  max-width: 900px;
-  margin: 0 auto;
+  line-height: 1.7;
+  text-align: justify;
 }
 
 /* ===== Project Cards ===== */
 .project-card{
-  background:#1e293b;
+  background:#111827;
   color:white;
   padding:20px;
   border-radius:10px;
@@ -106,6 +113,7 @@ a {
 
 .project-card:hover{
   transform:scale(1.05);
+  box-shadow: 0 0 20px #2196f3;
 }
 
 /* ===== Skills ===== */
@@ -134,6 +142,8 @@ a {
 .btn-hero{
   padding:12px 25px;
   font-size:18px;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 </style>
 
@@ -170,17 +180,17 @@ a {
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section text-center">
-<h2 data-aos="fade-up">About Me</h2>
-<div class="about-text" data-aos="fade-up">
+<section id="about" class="section" data-aos="fade-up">
+<h2 class="text-center">About Me</h2>
+<p class="about-text">
 Hello, I'm Akshansh Kumar Pandey, an MBA graduate specializing in Business Analytics with a strong interest in data analysis and business intelligence. I am passionate about transforming raw data into meaningful insights that help organizations make informed and strategic business decisions. Currently, I am working as a Data Analyst at Bakersville India Pvt. Ltd., where I analyze business data, prepare reports, and support data-driven decision-making processes. My role involves working with business datasets, identifying trends, and creating reports that help improve operational efficiency and support business growth. I primarily work with tools such as Microsoft Excel, Power BI, and Power Query to clean, transform, analyze, and visualize data. I enjoy building interactive dashboards and reports that simplify complex data and provide clear insights for better decision-making. I am continuously learning and improving my analytical skills while exploring advanced data analysis techniques. My goal is to build a strong career in Data Analytics and Business Intelligence, where I can use data-driven insights to solve real-world business problems and create value for organizations.
-</div>
+</p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="section text-center">
-<h2 data-aos="fade-up">Skills</h2>
-<div data-aos="zoom-in">
+<section id="skills" class="section text-center" data-aos="fade-up">
+<h2>Skills</h2>
+<div>
 <i class="fas fa-chart-line skill-icon" title="Power BI"></i>
 <i class="fas fa-database skill-icon" title="SQL"></i>
 <i class="fas fa-file-excel skill-icon" title="Advanced Excel"></i>
@@ -192,7 +202,7 @@ Hello, I'm Akshansh Kumar Pandey, an MBA graduate specializing in Business Analy
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section">
+<section id="projects" class="section" data-aos="fade-up">
 <h2 class="text-center">Projects</h2>
 <div class="container">
 <div class="row">
@@ -222,7 +232,7 @@ Hello, I'm Akshansh Kumar Pandey, an MBA graduate specializing in Business Analy
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section text-center">
+<section id="contact" class="section text-center" data-aos="fade-up">
 <h2>Contact</h2>
 <p>Email: <a href="mailto:happypandey1234554321@gmail.com" style="color:#2196f3;">happypandey1234554321@gmail.com</a></p>
 <p>Phone: <a href="tel:+918303130564" style="color:#2196f3;">+91 83031 30564</a></p>
@@ -241,7 +251,7 @@ tsParticles.load("particles-js", {
   fullScreen: { enable: false, zIndex: 1 },
   particles: {
     number: { value: 80 },
-    color: { value: "#00bfff" },
+    color: { value: "#00ffff" },
     shape: { type: "circle" },
     opacity: { value: 0.5 },
     size: { value: 3 },
