@@ -52,6 +52,17 @@ body{
   z-index: 2;
 }
 
+.hero-buttons {
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.hero-buttons a {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
 .section{
   padding:80px 20px;
 }
@@ -110,7 +121,14 @@ body{
 <section class="hero">
 <h1 data-aos="fade-up">Hello I'm Akshansh Kumar Pandey</h1>
 <p data-aos="fade-up">DATA ANALYST</p>
-<a href="#projects" class="btn btn-primary btn-hero" data-aos="fade-up">View My Work</a>
+
+<!-- Buttons Below Name -->
+<div class="hero-buttons" data-aos="fade-up">
+  <a href="#about" class="btn btn-outline-primary">About Me</a>
+  <a href="#skills" class="btn btn-outline-success">Skills</a>
+  <a href="#projects" class="btn btn-outline-warning">Projects</a>
+  <a href="#contact" class="btn btn-outline-info">Contact</a>
+</div>
 </section>
 
 <!-- ABOUT -->
@@ -127,7 +145,6 @@ I am continuously learning and improving my analytical skills while exploring ad
 <!-- SKILLS -->
 <section id="skills" class="section text-center">
 <h2 data-aos="fade-up">Skills</h2>
-
 <div data-aos="zoom-in">
 <i class="fas fa-chart-line skill-icon" title="Power BI"></i>
 <i class="fas fa-database skill-icon" title="SQL"></i>
@@ -137,13 +154,6 @@ I am continuously learning and improving my analytical skills while exploring ad
 <i class="fas fa-chart-bar skill-icon" title="Looker Studio"></i>
 <i class="fas fa-chart-pie skill-icon" title="Mixpanel"></i>
 </div>
-
-<!-- Navigation Buttons -->
-<div data-aos="fade-up" class="mt-4">
-  <a href="#about" class="btn btn-outline-primary m-2">About Me</a>
-  <a href="#projects" class="btn btn-outline-success m-2">Projects</a>
-  <a href="#contact" class="btn btn-outline-info m-2">Contact</a>
-</div>
 </section>
 
 <!-- PROJECTS -->
@@ -151,7 +161,6 @@ I am continuously learning and improving my analytical skills while exploring ad
 <h2 class="text-center">Projects</h2>
 <div class="container">
 <div class="row">
-
 <div class="col-md-4" data-aos="fade-up">
 <div class="project-card">
 <h4>Portfolio Website</h4>
@@ -159,7 +168,6 @@ I am continuously learning and improving my analytical skills while exploring ad
 <a href="https://github.com/yourusername/portfolio" target="_blank" class="btn btn-outline-primary mt-2">View Project</a>
 </div>
 </div>
-
 <div class="col-md-4" data-aos="fade-up">
 <div class="project-card">
 <h4>Spotify Music Analysis</h4>
@@ -167,7 +175,6 @@ I am continuously learning and improving my analytical skills while exploring ad
 <a href="https://github.com/yourusername/spotify-analysis" target="_blank" class="btn btn-outline-success mt-2">View Project</a>
 </div>
 </div>
-
 <div class="col-md-4" data-aos="fade-up">
 <div class="project-card">
 <h4>Task Manager App</h4>
@@ -175,7 +182,6 @@ I am continuously learning and improving my analytical skills while exploring ad
 <a href="https://github.com/yourusername/task-manager" target="_blank" class="btn btn-outline-info mt-2">View Project</a>
 </div>
 </div>
-
 </div>
 </div>
 </section>
@@ -189,9 +195,7 @@ I am continuously learning and improving my analytical skills while exploring ad
 </section>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init();
-</script>
+<script>AOS.init();</script>
 
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 <script>
