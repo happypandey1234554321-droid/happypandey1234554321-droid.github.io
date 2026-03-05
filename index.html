@@ -11,7 +11,7 @@
 body{
   background:#0f172a;
   color:white;
-  font-family:Arial;
+  font-family:Arial, sans-serif;
 }
 
 .navbar{
@@ -81,6 +81,12 @@ body{
 .skill-icon{
   font-size:40px;
   margin:15px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.skill-icon:hover {
+  transform: scale(1.3);
+  color: #00ffff;
 }
 
 #particles-js {
@@ -100,6 +106,13 @@ body{
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  margin: 0 auto 20px auto;
 }
 </style>
 
@@ -127,7 +140,6 @@ a {
 <h1 data-aos="fade-up">Hello I'm Akshansh Kumar Pandey</h1>
 <p data-aos="fade-up">DATA ANALYST</p>
 
-<!-- Buttons Below Name -->
 <div class="hero-buttons" data-aos="fade-up">
   <a href="#about" class="btn btn-outline-primary">About Me</a>
   <a href="#skills" class="btn btn-outline-success">Skills</a>
@@ -143,11 +155,11 @@ a {
 <div class="container" data-aos="fade-up">
   <div class="row justify-content-center align-items-center">
 
-    <!-- Left: Illustration -->
+    <!-- Illustration -->
     <div class="col-md-4 mb-4" data-aos="zoom-in">
-      <img src="https://images.unsplash.com/photo-1591696205602-2e96d2bfc86d?auto=format&fit=crop&w=400&q=80" 
+      <img src="https://undraw.co/api/illustrations/undraw_data_analytics_re_dsjp.svg" 
            alt="Data Analytics Illustration" 
-           class="img-fluid rounded shadow">
+           class="about-img shadow rounded">
     </div>
 
     <!-- Right: Text Cards -->
