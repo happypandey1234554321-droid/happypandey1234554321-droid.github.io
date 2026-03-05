@@ -8,20 +8,29 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <style>
+/* ===== Global Styles ===== */
 body{
-  background:#e3f2fd; /* professional light blue background */
+  background-color: #f5f7fa; /* Professional light gray background for entire website */
   color:#111;
-  font-family:Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  transition: background 0.5s;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== Navbar ===== */
 .navbar{
-  background:#2196f3; /* professional blue navbar */
+  background:#2196f3; /* Professional blue navbar */
 }
 
 .navbar .nav-link{
   color:#ffffff !important;
 }
 
+/* ===== Hero Section ===== */
 .hero {
   height: 100vh;
   display: flex;
@@ -46,7 +55,7 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.5); /* dark overlay for hero */
   z-index: 0;
 }
 
@@ -67,10 +76,26 @@ body{
   font-size: 16px;
 }
 
+/* ===== Sections ===== */
 .section{
   padding:80px 20px;
+  background-color: #f5f7fa; /* Same professional background for all sections */
 }
 
+/* ===== About Section ===== */
+.about-text {
+  background: #ffffff; /* Slightly lighter card to stand out */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  color: #111;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ===== Project Cards ===== */
 .project-card{
   background:#1e293b;
   color:white;
@@ -83,6 +108,7 @@ body{
   transform:scale(1.05);
 }
 
+/* ===== Skills ===== */
 .skill-icon{
   font-size:40px;
   margin:15px;
@@ -94,6 +120,7 @@ body{
   color: #00bfff;
 }
 
+/* ===== Particles ===== */
 #particles-js {
   position: absolute;
   width: 100%;
@@ -103,27 +130,12 @@ body{
   z-index: 0;
 }
 
+/* ===== Buttons ===== */
 .btn-hero{
   padding:12px 25px;
   font-size:18px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.about-text {
-  background: #f0f4f8; /* light professional color */
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  color: #111;
-  font-size: 16px;
-  line-height: 1.6;
-  max-width: 900px;
-  margin: 0 auto;
-}
 </style>
 
 </head>
@@ -161,7 +173,6 @@ a {
 <!-- ABOUT -->
 <section id="about" class="section text-center">
 <h2 data-aos="fade-up">About Me</h2>
-
 <div class="about-text" data-aos="fade-up">
 Hello, I'm Akshansh Kumar Pandey, an MBA graduate specializing in Business Analytics with a strong interest in data analysis and business intelligence. I am passionate about transforming raw data into meaningful insights that help organizations make informed and strategic business decisions. Currently, I am working as a Data Analyst at Bakersville India Pvt. Ltd., where I analyze business data, prepare reports, and support data-driven decision-making processes. My role involves working with business datasets, identifying trends, and creating reports that help improve operational efficiency and support business growth. I primarily work with tools such as Microsoft Excel, Power BI, and Power Query to clean, transform, analyze, and visualize data. I enjoy building interactive dashboards and reports that simplify complex data and provide clear insights for better decision-making. I am continuously learning and improving my analytical skills while exploring advanced data analysis techniques. My goal is to build a strong career in Data Analytics and Business Intelligence, where I can use data-driven insights to solve real-world business problems and create value for organizations.
 </div>
@@ -186,7 +197,6 @@ Hello, I'm Akshansh Kumar Pandey, an MBA graduate specializing in Business Analy
 <h2 class="text-center">Projects</h2>
 <div class="container">
 <div class="row">
-
 <div class="col-md-4" data-aos="fade-up">
 <div class="project-card">
 <h4>Portfolio Website</h4>
@@ -194,7 +204,6 @@ Hello, I'm Akshansh Kumar Pandey, an MBA graduate specializing in Business Analy
 <a href="https://github.com/yourusername/portfolio" target="_blank" class="btn btn-outline-primary mt-2">View Project</a>
 </div>
 </div>
-
 <div class="col-md-4" data-aos="fade-up">
 <div class="project-card">
 <h4>Spotify Music Analysis</h4>
@@ -202,7 +211,6 @@ Hello, I'm Akshansh Kumar Pandey, an MBA graduate specializing in Business Analy
 <a href="https://github.com/yourusername/spotify-analysis" target="_blank" class="btn btn-outline-success mt-2">View Project</a>
 </div>
 </div>
-
 <div class="col-md-4" data-aos="fade-up">
 <div class="project-card">
 <h4>Task Manager App</h4>
@@ -210,7 +218,6 @@ Hello, I'm Akshansh Kumar Pandey, an MBA graduate specializing in Business Analy
 <a href="https://github.com/yourusername/task-manager" target="_blank" class="btn btn-outline-info mt-2">View Project</a>
 </div>
 </div>
-
 </div>
 </div>
 </section>
