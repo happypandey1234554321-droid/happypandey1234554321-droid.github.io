@@ -9,13 +9,17 @@
 
 <style>
 body{
-  background:#0f172a;
-  color:white;
+  background:#f5f5f5;
+  color:#111;
   font-family:Arial, sans-serif;
 }
 
 .navbar{
-  background:#020617;
+  background:#ffffff;
+}
+
+.navbar .nav-link{
+  color:#111 !important;
 }
 
 .hero {
@@ -69,6 +73,7 @@ body{
 
 .project-card{
   background:#1e293b;
+  color:white;
   padding:20px;
   border-radius:10px;
   transition:0.3s;
@@ -86,7 +91,7 @@ body{
 
 .skill-icon:hover {
   transform: scale(1.3);
-  color: #00ffff;
+  color: #00bfff;
 }
 
 #particles-js {
@@ -114,6 +119,16 @@ a {
   display: block;
   margin: 0 auto 20px auto;
 }
+
+.about-text {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  color: #111;
+  font-size: 16px;
+  line-height: 1.6;
+}
 </style>
 
 </head>
@@ -121,14 +136,14 @@ a {
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-light">
 <div class="container">
 <a class="navbar-brand" href="#">MyPortfolio</a>
 <div>
-<a class="nav-link d-inline text-white" href="#about">ABOUT</a>
-<a class="nav-link d-inline text-white" href="#skills">| SKILLS</a>
-<a class="nav-link d-inline text-white" href="#projects">| PROJECTS</a>
-<a class="nav-link d-inline text-white" href="#contact">| CONTACT</a>
+<a class="nav-link d-inline" href="#about">ABOUT</a>
+<a class="nav-link d-inline" href="#skills">| SKILLS</a>
+<a class="nav-link d-inline" href="#projects">| PROJECTS</a>
+<a class="nav-link d-inline" href="#contact">| CONTACT</a>
 </div>
 </div>
 </nav>
@@ -154,34 +169,17 @@ a {
 
 <div class="container" data-aos="fade-up">
   <div class="row justify-content-center align-items-center">
-
-    <!-- Illustration -->
-    <div class="col-md-4 mb-4" data-aos="zoom-in">
+    <div class="col-md-8">
       <img src="https://undraw.co/api/illustrations/undraw_data_analytics_re_dsjp.svg" 
            alt="Data Analytics Illustration" 
-           class="about-img shadow rounded">
-    </div>
-
-    <!-- Right: Text Cards -->
-    <div class="col-md-6 text-start">
-      <div class="mb-3 p-3 bg-dark rounded" data-aos="fade-right">
-        <h5>🎓 Education</h5>
-        <p>MBA in Business Analytics, focused on transforming data into actionable insights.</p>
-      </div>
-      <div class="mb-3 p-3 bg-dark rounded" data-aos="fade-right" data-aos-delay="100">
-        <h5>💼 Current Role</h5>
-        <p>Data Analyst at Bakersville India Pvt. Ltd., analyzing business data and supporting data-driven decisions.</p>
-      </div>
-      <div class="mb-3 p-3 bg-dark rounded" data-aos="fade-right" data-aos-delay="200">
-        <h5>🛠 Tools & Skills</h5>
-        <p>Power BI, Power Query, Advanced Excel, Python & Libraries, SQL, Looker Studio, Mixpanel.</p>
-      </div>
-      <div class="mb-3 p-3 bg-dark rounded" data-aos="fade-right" data-aos-delay="300">
-        <h5>🚀 Career Goals</h5>
-        <p>Continuously improving my analytics skills to solve real-world business problems and create value for organizations.</p>
+           class="about-img" data-aos="zoom-in">
+      <div class="about-text" data-aos="fade-up">
+        Hello, I'm Akshansh Kumar Pandey, an MBA graduate specializing in Business Analytics with a strong interest in data analysis and business intelligence. I am passionate about transforming raw data into meaningful insights that help organizations make informed and strategic business decisions.
+        Currently, I am working as a Data Analyst at Bakersville India Pvt. Ltd., where I analyze business data, prepare reports, and support data-driven decision-making processes. My role involves working with business datasets, identifying trends, and creating reports that help improve operational efficiency and support business growth.
+        I primarily work with tools such as Microsoft Excel, Power BI, and Power Query to clean, transform, analyze, and visualize data. I enjoy building interactive dashboards and reports that simplify complex data and provide clear insights for better decision-making.
+        I am continuously learning and improving my analytical skills while exploring advanced data analysis techniques. My goal is to build a strong career in Data Analytics and Business Intelligence, where I can use data-driven insights to solve real-world business problems and create value for organizations.
       </div>
     </div>
-
   </div>
 </div>
 </section>
@@ -237,8 +235,8 @@ a {
 <!-- CONTACT -->
 <section id="contact" class="section text-center">
 <h2>Contact</h2>
-<p>Email: <a href="mailto:happypandey1234554321@gmail.com" style="color:#00ffff;">happypandey1234554321@gmail.com</a></p>
-<p>Phone: <a href="tel:+918303130564" style="color:#00ffff;">+91 83031 30564</a></p>
+<p>Email: <a href="mailto:happypandey1234554321@gmail.com" style="color:#00bfff;">happypandey1234554321@gmail.com</a></p>
+<p>Phone: <a href="tel:+918303130564" style="color:#00bfff;">+91 83031 30564</a></p>
 <div>
 <i class="fab fa-github fa-2x m-2"></i>
 <i class="fab fa-linkedin fa-2x m-2"></i>
@@ -254,7 +252,7 @@ tsParticles.load("particles-js", {
   fullScreen: { enable: false, zIndex: 1 },
   particles: {
     number: { value: 80 },
-    color: { value: "#00ffff" },
+    color: { value: "#00bfff" },
     shape: { type: "circle" },
     opacity: { value: 0.5 },
     size: { value: 3 },
